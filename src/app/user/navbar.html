@@ -1,0 +1,59 @@
+<!-- 🖤 Top Contact Bar -->
+<div class="bg-gray-900 text-white text-sm py-2 px-4 flex justify-between items-center">
+  <!-- Contact info (hidden on mobile) -->
+  <div class="hidden md:flex items-center space-x-4 text-xs">
+    <span>(+0)-000-0000-000</span>
+    <span>support@websitename.com</span>
+  </div>
+  
+  <!-- Scrolling marquee -->
+  <div class="overflow-hidden whitespace-nowrap text-sm font-semibold">
+    <div class="animate-marquee inline-block">
+      Welcome to <span class="text-[#800000] font-bold">Moon Marketing!</span> Best deals and offers available now.
+    </div>
+  </div>
+  
+  <!-- Social icons (hidden on mobile) -->
+  <div class="hidden md:flex space-x-3 text-lg">
+    <i class="fab fa-facebook-f p-2 hover:text-red-900"></i>
+    <i class="fab fa-instagram p-2 hover:text-red-900"></i>
+    <i class="fab fa-twitter p-2 hover:text-red-900"></i>
+  </div>
+</div>
+
+<nav class="sticky top-0 w-full z-50 ">
+  <!-- 🤍 Main Navbar -->
+  <div class="bg-white shadow-md">
+    <div class="flex items-center justify-between px-4 py-3">
+      <!-- Logo -->
+      <div class="flex items-center bg-[#800000] text-white px-4 py-2 rounded-tr-[25px]">
+        <span class="text-2xl font-bold">Moon Marketing</span>
+      </div>
+
+      <!-- Hamburger Button (mobile) -->
+      <button (click)="toggleMenu()" class="md:hidden p-2 text-gray-800 hover:text-[#800000]">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 font-bold text-[#800000] text-base">
+        <a routerLink="/" class="hover:text-red-700">Home</a>
+        <a routerLink="/news" class="hover:text-red-700">News</a>
+        <a routerLink="/contact" class="hover:text-red-700">Contact</a>
+        <a routerLink="/about" class="hover:text-red-700">About</a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div [ngClass]="menuOpen ? 'block' : 'hidden'"
+      class="md:hidden bg-white border-t border-gray-200 font-bold text-[#800000] text-center text-lg">
+      <a routerLink="/" class="block py-2 hover:text-red-700">Home</a>
+      <a routerLink="/news" class="block py-2 hover:text-red-700">News</a>
+      <a routerLink="/contact" class="block py-2 hover:text-red-700">Contact</a>
+      <a routerLink="/about" class="block py-2 hover:text-red-700">About</a>
+    </div>
+  </div>
+</nav>
