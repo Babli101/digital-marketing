@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "tailwind:init": "tailwindcss init",
     "serve:ssr:moon-marketing": "node dist/moon-marketing/server/server.mjs"
   },
   "prettier": {
@@ -31,9 +32,10 @@
     "@angular/platform-server": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.0",
-    "@tailwindcss/postcss": "^4.1.16",
     "express": "^5.1.0",
+    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^12.0.3",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -44,6 +46,7 @@
     "@angular/compiler-cli": "^20.3.0",
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
+    "@types/jquery": "^3.5.33",
     "@types/node": "^20.17.19",
     "autoprefixer": "^10.4.21",
     "jasmine-core": "~5.9.0",
