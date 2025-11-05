@@ -1,446 +1,155 @@
-<div
-    class="relative h-[90vh] overflow-hidden bg-black text-white flex flex-col md:flex-row items-center justify-center">
-    <!-- 🌌 Stars Background -->
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+<section
+    class="relative h-90 flex flex-col justify-center items-center bg-cover bg-center bg-fixed overflow-hidden text-center text-white"
+    style="background-image: url('opoy7.jpg');">
 
-    <!-- 🖼️ Left Side Image -->
-    <div class="md:w-1/2 w-full flex justify-center mb-6 md:mb-0 hidden md:flex">
-        <div class="flex items-center justify-center">
-            <div class="text-[20vmin] uppercase leading-[0.75em] tracking-[-0.04em] bg-clip-text text-transparent"
-                style="background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWhkaW1hdmN0bmg4cjUxd3RxbWJsbzl6a3M0a2M1dTdveGJjM3pqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gHiRWOaXGGHOY5w6f3/giphy.gif'); background-repeat: repeat; background-size: auto 100%;">
-                <p class="text-center">
-                    Your Growth,<br />
-                    Our Strategy
-
-                </p>
-            </div>
-        </div>
+    <!-- Hero Text -->
+    <div class="z-10 animate-fadeUp">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            <span class="text-red-700">ABOUT</span>
+        </h1>
+        <p class="text-gray-300 text-lg">Turning digital ideas into powerful results</p>
     </div>
 
-    <!-- 📝 Right Side Content -->
-    <div class="md:w-1/2 w-full flex flex-col items-center md:items-start text-center md:text-left px-6 z-10">
-        <h5 class="text-4xl md:text-4xl font-bold mb-4">
-            Your Growth Is <span class="text-[#800000]">Our Goal!</span>
-        </h5>
-        <p class="text-lg md:text-xl max-w-2xl">
-            Our digital marketing experts create impactful campaigns that connect, convert, and grow your business.
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-8 w-full flex justify-center z-10">
+        <span class="animate-bounce text-gray-300 text-xl">↓ Scroll Down</span>
+    </div>
+
+    <!-- Animated Circles Background -->
+    <ul class="circles absolute inset-0 overflow-hidden">
+        <li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+</section>
+<!-- ABOUT DETAILS -->
+<section id="about" class="bg-gray-100 py-16 text-white">
+    <div class="max-w-6xl mx-auto grid gap-10 lg:grid-cols-2 items-center px-6">
+
+        <!-- 🌆 Image Column -->
+        <div class="relative flex flex-col items-center text-center lg:text-left lg:order-1" data-aos="fade-left">
+            <div class="relative w-[160px] sm:w-[200px] md:w-[220px] lg:w-[240px] mb-6">
+                <!-- Main Image -->
+                <img src="digi.jpg" alt="Moon Marketing team or service"
+                    class="relative z-10 rounded-2xl border-4 border-white shadow-xl w-full object-cover" />
+
+                <!-- Decorative box background -->
+                <div
+                    class="absolute top-[-1.2rem] right-[-1.5rem] hidden lg:block bg-[#fca5a5] border-b-4 border-[#800000] rounded-xl w-[100px] h-[200px]">
+                </div>
+
+                <!-- Small circle deco -->
+                <div
+                    class="absolute bottom-[-0.75rem] left-[-0.75rem] hidden lg:block w-6 h-6 bg-[#800000] rounded-full border-2 border-white shadow-md">
+                </div>
+
+                <!-- Small tilted square deco -->
+                <div
+                    class="absolute top-[40%] right-[-0.75rem] hidden lg:block w-5 h-5 bg-[#800000] rotate-45 border-2 border-white">
+                </div>
+            </div>
+
+            <!-- 🌟 Our Mission / Vision -->
+            <div class="mt-4 ">
+                <ul class="list-disc list-inside text-base text-gray-800 space-y-2 text-left">
+                    <li>
+                        <strong>Our Vision:</strong> Empower businesses to grow confidently and
+                        connect meaningfully with their audience.
+                    </li>
+                    <li>
+                        <strong>Our Mission:</strong> To express brand stories through authentic,
+                        creative, and effective marketing that drives real growth.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 📝 Text Column -->
+        <div class="pl-4" data-aos="fade-right">
+            <h2 class="text-[#800000] text-3xl font-bold mb-4">
+                Bringing creativity and strategy together.
+            </h2>
+
+            <p class="mb-6 text-lg leading-relaxed text-gray-800">
+                At <strong>Moon Marketing</strong>, we specialize in helping brands shine in the
+                digital universe. From SEO and Social Media Marketing to Paid Advertising and
+                Website Design, our mission is simple — to deliver measurable results, build
+                trust, and ensure long-term business growth.
+            </p>
+
+            <p class="mb-6 text-lg leading-relaxed text-gray-800">
+                We are more than a marketing agency — we are your strategic growth partners. Our
+                passionate marketers, designers, and analysts craft campaigns that truly resonate
+                with your audience. Every plan we make is backed by data, creativity, and a deep
+                understanding of market trends.
+            </p>
+
+            <p class="mb-6 text-lg leading-relaxed text-gray-800">
+                With innovation at the heart of everything we do, we focus on turning clicks into
+                loyal customers and building meaningful brand experiences. Whether you’re a
+                startup or an established brand, Moon Marketing has the expertise to guide you at
+                every step.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- WHY CHOOSE US -->
+<section id="why-choose" class="bg-[#f8f9fa] py-20" data-aos="fade-down">
+    <div class="container mx-auto w-[90%] max-w-[1200px] text-center">
+        <h3 class="text-4xl font-bold text-[#470000] mb-4 relative inline-block" data-aos="fade-up">
+            Why Choose <span class="text-[#800000]">Moon Marketing</span>
+            <span class="absolute left-1/2 -bottom-2 transform -translate-x-1/2 w-24 h-[3px] bg-[#800000]"></span>
+        </h3>
+        <p class="text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+            We don’t just market — we build relationships, strategies, and success stories. Here’s what makes us
+            different.
         </p>
-        <button class="mt-8 px-6 py-3 bg-[#800000] hover:bg-red-800 transition rounded-lg font-semibold">
-            Start Your Journey
-        </button>
-    </div>
-</div>
 
-<section id="about" class="bg-gray-200 py-16 text-gray-700 font-[Bai_Jamjuree]">
-    <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-1 lg:grid-cols-2 items-center px-6">
-
-        <!-- Image Section -->
-        <div class="relative flex justify-center mt-5 lg:order-1">
-            <div class="relative w-[220px] lg:w-[350px]">
-                <img src="digi.jpg" alt="About image"
-                    class="relative z-10 rounded-xl border-4 lg:border-6 border-white shadow-lg" />
-
-                <!-- Shadow -->
-                <div
-                    class="absolute top-[-2.5rem] right-[-3.5rem] lg:top-[-4rem] lg:right-[-5.5rem] bg-red-300 border-b-4 lg:border-b-6 border-red-900 rounded-xl w-[150px] h-[385px] lg:w-[240px] lg:h-[615px]">
-                </div>
-
-                <!-- Orange geometric box -->
-                <div
-                    class="absolute top-6 right-[-2.8rem] lg:right-[-4rem] lg:top-[4.5rem] w-5 h-5 bg-red-900 rotate-[-30deg] before:content-[''] before:absolute before:w-4 before:h-4 before:border-4 before:border-black before:top-[-5px] before:left-[-5px]">
-                </div>
-
-                <!-- Small orange box bottom -->
-                <div
-                    class="absolute bottom-6 right-[-0.5rem] lg:right-[-0.75rem] w-10 h-10 lg:w-16 lg:h-16 bg-red-900 rounded-lg">
-                </div>
-            </div>
-        </div>
-        <!-- Info Section -->
-        <div class="pl-4">
-            <h1 class="text-red-900 text-3xl">Bringing creativity and strategy together.</h1>
-            <p class="relative text-black mb-6 lg:mb-8 text-lg lg:text-xl leading-relaxed">
-                <span class="absolute left-[-1.75rem] lg:left-[-3rem] top-2 w-5 lg:w-8 h-[2px] bg-black"></span>
-                We believe true marketing success comes from the perfect balance of creativity and strategy. Our team
-                blends innovative ideas with data-driven insights to craft campaigns that captivate audiences and
-                deliver measurable results. From brand storytelling to performance marketing, we turn bold visions into
-                impactful digital experiences that drive growth.
-            </p>
-
-            <ul class="list-disc list-inside text-black mb-8 lg:mb-5">
-                <li><b>Our Mission:</b> To help brands express their stories through creative, authentic, and effective
-                    digital marketing.</li>
-            </ul>
-
-            <ul class="list-disc list-inside text-black">
-                <li><b>Our Vision:</b> To empower businesses of all kinds to grow confidently and build genuine
-                    connections with their audiences.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="bg-[url('bulb.jpg')] bg-cover bg-center bg-no-repeat py-20 px-6 text-center">
-    <!-- Glow background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#5b0025]/30 via-transparent to-[#2b0010]/30 blur-3xl"></div>
-
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <!-- Heading -->
-        <div class="text-center mb-14">
-            <h2 class="text-4xl font-bold text-white mb-3 tracking-tight">
-                Our <span class="text-red-900">Digital Marketing</span> Services
-            </h2>
-            <p class="text-[#9aa6b2] max-w-2xl mx-auto text-base">
-                From traffic to conversions, we cover every aspect of your digital growth journey.
-                Explore our core services designed for measurable business impact.
-            </p>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Service 1 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    🔍
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    SEO (Search Engine Optimization)
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Boost visibility, improve keyword rankings and drive consistent organic traffic through data-led
-                    SEO.
-                </p>
-            </article>
-
-            <!-- Service 2 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    💰
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Google Ads / PPC Campaigns
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Run high-performing ad campaigns that maximize ROI with smart targeting and bidding strategies.
-                </p>
-            </article>
-
-            <!-- Service 3 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    📱
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Social Media Marketing
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Build brand presence and engage audiences on Facebook, Instagram, LinkedIn, and more.
-                </p>
-            </article>
-
-            <!-- Service 4 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    ✍️
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Content Marketing
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Create and distribute valuable, consistent content that attracts and retains your ideal customers.
-                </p>
-            </article>
-
-            <!-- Service 5 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    📧
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Email Marketing
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Build loyalty and boost sales with personalized email automation campaigns that convert.
-                </p>
-            </article>
-
-            <!-- Service 6 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    💻
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Website Design & Development
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Create high-performing, responsive websites that blend aesthetics with functionality.
-                </p>
-            </article>
-
-            <!-- Service 7 -->
-            <article
-                class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                <div
-                    class="w-14 h-14 mb-5 rounded-xl bg-gradient-to-br from-rose-600/20 to-red-900/10 flex items-center justify-center text-2xl">
-                    📊
-                </div>
-                <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">
-                    Analytics & Reporting
-                </h3>
-                <p class="text-[#9aa6b2] text-sm">
-                    Track KPIs, measure success, and make smarter business decisions with detailed insights.
-                </p>
-            </article>
-        </div>
-    </div>
-</section>
-
-
-<!-- Case Studies Section -->
-<section id="case-studies" class="bg-[#0b1220] py-24 relative overflow-hidden">
-    <!-- Background Glow -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#5b0025]/30 via-transparent to-[#2b0010]/30 blur-3xl"></div>
-
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <!-- Heading -->
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-white mb-3">
-                Our <span class="text-red-900">Results & Case Studies</span>
-            </h2>
-            <p class="text-[#9aa6b2] max-w-2xl mx-auto">
-                Real-world results powered by creativity, data, and performance marketing.
-                See how we helped brands scale beyond expectations.
-            </p>
-        </div>
-
-        <!-- Case Studies Grid -->
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Case Study 1 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
             <div
-                class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition-all duration-500 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)]">
-                <img src="https://via.placeholder.com/500x320" alt="SEO Campaign"
-                    class="w-full h-56 object-cover opacity-90 group-hover:opacity-100 transition">
-                <div class="p-6">
-                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">SEO Growth
-                        Campaign</h3>
-                    <p class="text-[#9aa6b2] text-sm mb-4">
-                        Improved organic traffic and keyword rankings for a tech client.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-rose-400 font-semibold text-sm">↑ 200% Traffic</span>
-                        <span class="text-[#9aa6b2] text-xs">in 3 months</span>
-                    </div>
-                </div>
+                class="bg-white shadow-lg rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 border-t-4 border-[#800000]" data-aos="flip-left">
+                <div class="text-[#800000] text-4xl mb-4"><i class="fas fa-bullseye"></i></div>
+                <h4 class="text-xl font-bold mb-2">Result-Driven Strategy</h4>
+                <p class="text-gray-600 text-sm">We focus on measurable outcomes — higher conversions, better ROI, and
+                    sustainable growth.</p>
             </div>
 
-            <!-- Case Study 2 -->
+            <!-- Card 2 -->
             <div
-                class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition-all duration-500 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)]">
-                <img src="https://via.placeholder.com/500x320" alt="Social Media Campaign"
-                    class="w-full h-56 object-cover opacity-90 group-hover:opacity-100 transition">
-                <div class="p-6">
-                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">Social Media
-                        Campaign</h3>
-                    <p class="text-[#9aa6b2] text-sm mb-4">
-                        Built engagement and followers for a fashion brand through Instagram Reels & Ads.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-rose-400 font-semibold text-sm">+150K Reach</span>
-                        <span class="text-[#9aa6b2] text-xs">in 45 days</span>
-                    </div>
-                </div>
+                class="bg-white shadow-lg rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 border-t-4 border-[#470000]" data-aos="flip-up">
+                <div class="text-[#470000] text-4xl mb-4"><i class="fas fa-lightbulb"></i></div>
+                <h4 class="text-xl font-bold mb-2">Innovative Solutions</h4>
+                <p class="text-gray-600 text-sm">Creativity + analytics — campaigns that catch attention and keep
+                    performing.</p>
             </div>
 
-            <!-- Case Study 3 -->
+            <!-- Card 3 -->
             <div
-                class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition-all duration-500 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)]">
-                <img src="https://via.placeholder.com/500x320" alt="Ecommerce Ads"
-                    class="w-full h-56 object-cover opacity-90 group-hover:opacity-100 transition">
-                <div class="p-6">
-                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-rose-400 transition">E-commerce
-                        PPC Strategy</h3>
-                    <p class="text-[#9aa6b2] text-sm mb-4">
-                        Increased ROAS and reduced CPA for a beauty brand with optimized PPC.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-rose-400 font-semibold text-sm">3.5x ROAS</span>
-                        <span class="text-[#9aa6b2] text-xs">on Google Ads</span>
-                    </div>
-                </div>
+                class="bg-white shadow-lg rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 border-t-4 border-[#800000]" data-aos="flip-down">
+                <div class="text-[#800000] text-4xl mb-4"><i class="fas fa-users"></i></div>
+                <h4 class="text-xl font-bold mb-2">Expert Team</h4>
+                <p class="text-gray-600 text-sm">Cross-functional experts in SEO, ads, creative and analytics working
+                    for your goals.</p>
             </div>
-        </div>
-        <!-- Testimonials Section -->
-        <div id="testimonials" class="max-w-7xl mx-auto px-6 py-20 text-center">
-            <!-- Heading -->
-            <h2 class="text-4xl font-bold text-white mb-4">
-                What Our <span class="text-red-900">Clients Say</span>
-            </h2>
-            <p class="text-[#9aa6b2] text-sm md:text-base max-w-2xl mx-auto mb-12">
-                We’re proud to have helped our clients achieve real, measurable growth through our digital strategies.
-            </p>
 
-            <!-- Testimonials Grid -->
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                    <p class="text-[#9aa6b2] text-sm mb-5 italic leading-relaxed">
-                        “Their SEO and content strategy helped us triple our traffic. Transparent, skilled, and
-                        results-driven.”
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full border border-white/10"
-                            alt="Client">
-                        <div>
-                            <h4 class="text-white text-sm font-semibold">Amit Verma</h4>
-                            <p class="text-[#9aa6b2] text-xs">Marketing Head, TechNova</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                    <p class="text-[#9aa6b2] text-sm mb-5 italic leading-relaxed">
-                        “Our paid ads now perform 2x better than before. Their creative approach really works.”
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full border border-white/10"
-                            alt="Client">
-                        <div>
-                            <h4 class="text-white text-sm font-semibold">Neha Kapoor</h4>
-                            <p class="text-[#9aa6b2] text-xs">Founder, Bella Fashion</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl p-7 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-                    <p class="text-[#9aa6b2] text-sm mb-5 italic leading-relaxed">
-                        “They don’t just run ads — they understand our brand goals. Truly professional and reliable
-                        team.”
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full border border-white/10"
-                            alt="Client">
-                        <div>
-                            <h4 class="text-white text-sm font-semibold">Rahul Mehta</h4>
-                            <p class="text-[#9aa6b2] text-xs">CEO, UrbanDecor</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Card 4 -->
+            <div
+                class="bg-white shadow-lg rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 border-t-4 border-[#470000]" data-aos="flip-right">
+                <div class="text-[#470000] text-4xl mb-4"><i class="fas fa-handshake"></i></div>
+                <h4 class="text-xl font-bold mb-2">Client-Centric Approach</h4>
+                <p class="text-gray-600 text-sm">We value partnership — transparent reporting and strategies tailored to
+                    your brand.</p>
             </div>
         </div>
 
-        <!-- Client Logos -->
-        <div class="mt-20">
-            <h3 class="text-center text-white font-semibold mb-6 text-sm tracking-wide uppercase">
-                Trusted by Top Brands
-            </h3>
-            <div class="flex flex-wrap justify-center items-center gap-10 opacity-80">
-                <img src="https://via.placeholder.com/100x40" alt="Client Logo"
-                    class="h-10 grayscale hover:grayscale-0 transition">
-                <img src="https://via.placeholder.com/100x40" alt="Client Logo"
-                    class="h-10 grayscale hover:grayscale-0 transition">
-                <img src="https://via.placeholder.com/100x40" alt="Client Logo"
-                    class="h-10 grayscale hover:grayscale-0 transition">
-                <img src="https://via.placeholder.com/100x40" alt="Client Logo"
-                    class="h-10 grayscale hover:grayscale-0 transition">
-                <img src="https://via.placeholder.com/100x40" alt="Client Logo"
-                    class="h-10 grayscale hover:grayscale-0 transition">
-            </div>
+        <div class="mt-16">
+            <p class="text-gray-700 text-lg mb-6">Ready to grow your business with a trusted digital partner?</p>
+            <a href="#contact"
+                class="bg-[#800000] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#470000] transition-all duration-300">Let’s
+                Work Together</a>
         </div>
     </div>
-</section>
-
-<!-- Blog / Insights Section -->
-<section id="blog" class="bg-[#0b1220] py-24 relative overflow-hidden">
-  <!-- Background Glow -->
-  <div class="absolute inset-0 bg-gradient-to-br from-[#5b0025]/25 via-transparent to-[#2b0010]/30 blur-3xl"></div>
-
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <!-- Heading -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-white mb-3">
-        Latest <span class="text-red-900">Insights & Articles</span>
-      </h2>
-      <p class="text-[#9aa6b2] max-w-2xl mx-auto">
-        Stay ahead with expert guides, SEO trends, and marketing insights — curated to help your business grow smarter.
-      </p>
-    </div>
-
-    <!-- Blog Grid -->
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Blog Card 1 -->
-      <article class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-        <img src="https://via.placeholder.com/600x350" alt="Blog Image" class="w-full h-52 object-cover group-hover:opacity-90 transition">
-        <div class="p-6">
-          <span class="text-rose-400 text-xs font-semibold uppercase">SEO Trends</span>
-          <h3 class="text-lg font-semibold text-white mt-2 mb-3 group-hover:text-rose-400 transition">
-            Top SEO Strategies for 2025: What Actually Works
-          </h3>
-          <p class="text-[#9aa6b2] text-sm mb-5">
-            From AI-driven content to voice search optimization — here’s what you need to know for higher rankings.
-          </p>
-          <div class="flex items-center justify-between text-xs text-[#9aa6b2]">
-            <span>🗓️ Oct 20, 2025</span>
-            <a href="#" class="hover:text-rose-400 transition">Read More →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 2 -->
-      <article class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-        <img src="https://via.placeholder.com/600x350" alt="Blog Image" class="w-full h-52 object-cover group-hover:opacity-90 transition">
-        <div class="p-6">
-          <span class="text-rose-400 text-xs font-semibold uppercase">AI Marketing</span>
-          <h3 class="text-lg font-semibold text-white mt-2 mb-3 group-hover:text-rose-400 transition">
-            How AI is Transforming Digital Advertising
-          </h3>
-          <p class="text-[#9aa6b2] text-sm mb-5">
-            Discover how machine learning helps brands personalize ads and optimize campaigns for maximum ROI.
-          </p>
-          <div class="flex items-center justify-between text-xs text-[#9aa6b2]">
-            <span>🗓️ Sept 18, 2025</span>
-            <a href="#" class="hover:text-rose-400 transition">Read More →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Blog Card 3 -->
-      <article class="group bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(128,0,32,0.25)] transition-all duration-300">
-        <img src="https://via.placeholder.com/600x350" alt="Blog Image" class="w-full h-52 object-cover group-hover:opacity-90 transition">
-        <div class="p-6">
-          <span class="text-rose-400 text-xs font-semibold uppercase">Marketing Tools</span>
-          <h3 class="text-lg font-semibold text-white mt-2 mb-3 group-hover:text-rose-400 transition">
-            10 Tools Every Digital Marketer Should Use
-          </h3>
-          <p class="text-[#9aa6b2] text-sm mb-5">
-            Save time and scale results with these powerful analytics, content, and automation tools.
-          </p>
-          <div class="flex items-center justify-between text-xs text-[#9aa6b2]">
-            <span>🗓️ Aug 5, 2025</span>
-            <a href="#" class="hover:text-rose-400 transition">Read More →</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
 </section>

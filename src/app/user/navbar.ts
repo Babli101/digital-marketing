@@ -5,15 +5,23 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './navbar.html',
   styleUrls: ['./navbar.css']
 })
 export class NavbarComponent {
-menuOpen = false;
+  menuOpen = false;
+  dropdownOpen = false;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
-    console.log('Menu toggled:', this.menuOpen); // ✅ debug check
+  }
+
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  closeDropdown() {
+    this.dropdownOpen = false;
   }
 }

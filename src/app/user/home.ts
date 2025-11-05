@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +8,21 @@ import { CommonModule } from '@angular/common';
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })
-export class HomeComponent {
-  // Modal visibility
-
+export class HomeComponent implements OnInit {
   showModal = false;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  async ngOnInit(): Promise<void> {
+    if (isPlatformBrowser(this.platformId)) {
+      const AOS = (await import('aos')).default;
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+      });
+    }
+  }
 
   openModal() {
     this.showModal = true;
