@@ -1,15 +1,44 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })
 export class HomeComponent implements OnInit {
-  showModal = false;
+  showModal = false; // For Contact modal
+  selectedProject: any = null; // For Project Lightbox modal
+
+  projects = [
+    {
+      title: 'E-commerce Growth Campaign',
+      image: 'images/project1.jpg',
+      description:
+        'Increased website traffic by 250% and boosted online sales within 3 months through targeted Google Ads and SEO.',
+      details:
+        'This campaign helped an e-commerce brand grow their sales by leveraging search and display ads with a focus on high-ROI keywords and optimized landing pages.',
+    },
+    {
+      title: 'Real Estate Lead Generation',
+      image: 'images/project2.jpg',
+      description:
+        'Generated 500+ quality leads using Facebook Ads & landing page optimization.',
+      details:
+        'By designing visually appealing Facebook ad creatives and mobile-optimized landing pages, we significantly improved conversion rates and lead quality.',
+    },
+    {
+      title: 'Social Media Branding for a Startup',
+      image: 'images/project3.jpg',
+      description:
+        'Built a strong brand presence and grew Instagram followers from 0 to 10K organically.',
+      details:
+        'This project focused on consistent visual branding, content strategy, and influencer collaborations to establish credibility and engagement on social media.',
+    },
+  ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
@@ -17,13 +46,14 @@ export class HomeComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       const AOS = (await import('aos')).default;
       AOS.init({
-        duration: 1000,
+        duration: 1500,
         easing: 'ease-in-out',
         once: true,
       });
     }
   }
 
+  // Contact modal functions
   openModal() {
     this.showModal = true;
   }
@@ -37,5 +67,14 @@ export class HomeComponent implements OnInit {
     if (target.id === 'contactModal') {
       this.closeModal();
     }
+  }
+
+  // Project Lightbox
+  openProject(project: any) {
+    this.selectedProject = project;
+  }
+
+  closeProject() {
+    this.selectedProject = null;
   }
 }
