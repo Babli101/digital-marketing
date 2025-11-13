@@ -22,4 +22,5 @@ export class ProvideComponent implements OnInit {
       });
     }
   }
+
 }

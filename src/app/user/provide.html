@@ -1,71 +1,116 @@
-<div class="bg-[#fffaf7] py-10 px-4 max-w-6xl mx-auto text-center">
+<!-- 🎬 Banner Section — Compact & Balanced -->
+<section class="relative min-h-[50vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-black">
+  <!-- 🎥 Background Video -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-70">
+    <source src="3.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🖼️ Overlay Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0b0f10]/60 via-[#2b2f33]/80 to-[#0b0f10]/60"></div>
+
+  <!-- 📸 Foreground Content Box -->
+  <div
+    class="relative z-10 w-[90%] max-w-5xl rounded-[24px] overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2 bg-[#0b0f10]/70 backdrop-blur-sm border border-gray-700">
+
+    <!-- LEFT: Image -->
+    <div class="relative h-[320px] md:h-[420px]">
+      <img src="14.jpg" alt="person-back-view" class="w-full h-full object-cover block opacity-90" />
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#0b0f10]/85"></div>
+    </div>
+
+    <!-- RIGHT: Content -->
+    <div class="p-4 md:p-8 flex flex-col justify-center gap-4">
+      <p class="text-[#a55a46] font-semibold uppercase tracking-wider text-xs">Digital Help for Seniors</p>
+
+      <h1 class="text-2xl md:text-4xl font-extrabold text-white leading-snug">
+        We make sharing memories <span class="text-[#7a1f1f]">easy & safe</span>
+      </h1>
+
+      <div class="grid grid-cols-2 gap-3 mt-4 max-w-md">
+        <div class="flex items-start gap-2">
+          <div
+            class="w-7 h-7 rounded-full bg-[#a55a46] flex items-center justify-center text-white text-xs font-semibold">
+            1</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Account Setup</div>
+            <div class="text-[11px] text-gray-400">Profile & privacy</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <div
+            class="w-7 h-7 rounded-full bg-[#a55a46] flex items-center justify-center text-white text-xs font-semibold">
+            2</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Memory Videos</div>
+            <div class="text-[11px] text-gray-400">Photos ➜ Video</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <div
+            class="w-7 h-7 rounded-full bg-[#a55a46] flex items-center justify-center text-white text-xs font-semibold">
+            3</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Safe Lessons</div>
+            <div class="text-[11px] text-gray-400">Scam & privacy tips</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2">
+          <div
+            class="w-7 h-7 rounded-full bg-[#a55a46] flex items-center justify-center text-white text-xs font-semibold">
+            4</div>
+          <div>
+            <div class="font-semibold text-white text-sm">Post Creation</div>
+            <div class="text-[11px] text-gray-400">Images & short videos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="bg-[#fffaf7] py-10 px-4 max-w-6xl mx-auto text-center">
   <h2 class="text-4xl font-bold text-[#800000] mb-7">
     We Help You Share Your Story — The Easy Way
   </h2>
   <p class="text-gray-600 max-w-2xl mx-auto">
     Whether it’s a heartfelt birthday message, a touching family memory, or your own inspiring life story — we make
-        it simple for everyone, from kids to grandparents, to record, create, and share their most precious moments with
-        the people who matter most.
+    it simple for everyone, from kids to grandparents, to record, create, and share their most precious moments with
+    the people who matter most.
 
-        You don’t need any technical skills — just your emotions and your voice. We’ll help you capture your memories,
-        turn them into beautiful videos or slideshows, and share them effortlessly with your loved ones — making every
-        message unforgettable.
+    You don’t need any technical skills — just your emotions and your voice. We’ll help you capture your memories,
+    turn them into beautiful videos or slideshows, and share them effortlessly with your loved ones — making every
+    message unforgettable.
   </p>
-</div>
+</div> -->
 
 <!-- ====================section for send your message =========================== -->
-<section class="bg-[#000] py-10 px-6">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-
-    <!-- 🧩 Left Content -->
+<section class="bg-[#000] py-16 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <!-- 🧩 Left Content (Image) -->
     <div class="md:w-1/2 flex justify-center" data-aos="fade-right">
-      <img src="8.png" alt="Elderly person getting video help"
-        class="img-6 rounded-md shadow-2xl object-cover max-w-md transition-all duration-700" />
+      <video autoplay muted loop playsinline class="img-6 h-[300px] object-cover">
+        <source src="5.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <!-- 🖼️ Right Image -->
+    <!-- 🖼️ Right Content (Text) -->
     <div class="md:w-1/2 text-center md:text-left" data-aos="fade-left">
-
-      <h2 class="text-4xl font-bold text-[#fff] mb-6">
+      <h2 class="text-4xl font-bold text-white mb-6 leading-snug">
         Send Your Message to Loved Ones
       </h2>
-
-      <p class="text-gray-400 mb-8 leading-relaxed">
-        When your story is ready to shine, we’ll help you share it effortlessly — across WhatsApp, email, or any social
-        platform — so your message can inspire, connect, and touch hearts all over the world.
+      <p class="text-gray-400 text-lg leading-relaxed">
+        When your story is ready to shine, we’ll help you share it effortlessly —
+        across WhatsApp, email, or any social platform — so your message can
+        inspire, connect, and touch hearts all over the world.
       </p>
     </div>
-
   </div>
 </section>
-<!-- ====================section for Script Writing Assistance =========================== -->
-<section class="bg-[#000] py-10 px-6">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-
-    <!-- 🧩 Left Content -->
-    <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
-      <h2 class="text-4xl font-bold text-[#fff] mb-6">
-        Digital Memories Creation
-      </h2>
-
-      <p class="text-gray-400 mb-8 leading-relaxed">
-        Turn your best moments into shareable memories — with cinematic edits and perfect background music.
-        From travel adventures to life milestones, we transform your raw clips into stunning stories. Smooth
-        transitions, aesthetic filters, and soundtracks that match your vibe — everything you need to make your videos
-        unforgettable and ready to trend online.
-      </p>
-    </div>
-
-
-    <!-- 🖼️ Right Image -->
-    <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
-      <img src="4.jpg" alt="Elderly person getting video help"
-        class="img-6 rounded-md shadow-2xl object-cover max-w-md transition-all duration-700" />
-    </div>
-
-  </div>
-</section>
-
 
 <!-- ===================this section for Turn Your Photos Into a Video============================== -->
 <section class="bg-[#000] py-20 px-6">
@@ -86,8 +131,10 @@
 
     <!-- 🖼️ Right Image -->
     <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
-      <img src="4.jpg" alt="Elderly person getting video help"
-        class="img-6 rounded-md shadow-2xl object-cover max-w-md transition-all duration-700" />
+      <video autoplay muted loop playsinline class="img-6 h-[300px] object-cover">
+        <source src="4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
 
